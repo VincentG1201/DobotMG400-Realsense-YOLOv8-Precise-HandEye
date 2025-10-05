@@ -1,0 +1,13 @@
+#dataset root directory
+path: /Users/xilinguan/Desktop/model_training_test_1
+
+##define the path of train and validation path for YOLO training (relative)
+train: images/train
+
+val: images/val
+
+nc: 2
+
+names:
+  0: testtube
+  1: slot

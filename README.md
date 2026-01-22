@@ -214,3 +214,5 @@ Before running any scripts, open `calibration_config.py` and update:
 > 📏 **Planes:** For best results, the chessboard and target objects should lie on the same physical working plane (Z-height).
 
 ---
+
+### If you find this project useful or build upon it, feel free to star the repo ⭐ 😁

@@ -14,6 +14,12 @@ In real-world robotic manipulation, directly mapping image pixels to robot coord
 
 The result is a practical calibration pipeline that allows the robot to **detect an object in the image and move its gripper accurately to that object in the real world**.
 
+- **DEMO VIDEO**
+[2025_summer_project_demo](
+
+https://github.com/user-attachments/assets/27255d02-cfd7-4114-bda7-78a1a5c54e0f
+
+)
 ---
 
 ## 🧠 System Architecture

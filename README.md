@@ -116,27 +116,27 @@ Press s when the chessboard is detected.
 
 ### Step 2 — Update Robot Coordinate Data (Manual)
 
-1. Manually jog the robot to align the gripper with each chessboard corner
+1. **Manually jog the robot to align the gripper with each chessboard corner**
 
-2. Record robot X/Y coordinates
+2. **Record robot X/Y coordinates**
 
-3. Open calibration_stage_1_homography.py
+3. **Open calibration_stage_1_homography.py****
 
-4. Replace the values inside robot_poses_mm in:
+4. **Replace the values inside robot_poses_mm in:**
     ```python
     step_2_get_robot_poses()
     ```
 
 
 ### Step 3 — Compute Homography Matrix
-1. Comment out step_1_detect_corners()
-2. Run:
+1. **Comment out step_1_detect_corners()**
+2. **Run:**
     ```python
     robot_poses = step_2_get_robot_poses()
     step_3_calculate_homography(robot_poses)
     ```
-output
-homographt_matrix.txt
+### output
+#### homographt_matrix.txt
 
 ## 3️⃣ Stage 2: Calibration Refinement
 ### Step 1 — Estimate mm-per-Pixel

@@ -106,6 +106,7 @@ def step_3_calculate_homography(robot_poses_mm):
     print("Stage 1 is complete.")
 
 if __name__ == "__main__":
+    pass
     # --- Instructions ---
     # 1. Run the script once to execute step_1_detect_corners().
     # 2. After it completes, edit the array in step_2_get_robot_poses() with your data.
@@ -113,5 +114,6 @@ if __name__ == "__main__":
 
     # step_1_detect_corners()
     
-    robot_poses = step_2_get_robot_poses()
-    step_3_calculate_homography(robot_poses)
+    # robot_poses = step_2_get_robot_poses()
+    
+    # step_3_calculate_homography(robot_poses)

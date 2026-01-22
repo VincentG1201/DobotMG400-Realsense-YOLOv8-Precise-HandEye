@@ -222,6 +222,8 @@ def step_3_get_manual_work_offset():
 
 
 if __name__ == "__main__":
+    
+    pass
     # --- Instructions ---
     # Uncomment and run each function one by one.
     

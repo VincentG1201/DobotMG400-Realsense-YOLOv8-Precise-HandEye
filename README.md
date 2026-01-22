@@ -137,8 +137,8 @@ Before running any scripts, open `calibration_config.py` and update:
     step_3_calculate_homography(robot_poses)
     ```
 
-## 📄 output
-#### homographt_matrix.txt
+- **📄 output**:
+    -homographt_matrix.txt
 ---
 
 ## 3️⃣ Stage 2: Calibration Refinement

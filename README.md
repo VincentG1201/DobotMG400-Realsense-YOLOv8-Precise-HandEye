@@ -180,5 +180,4 @@ Before running any scripts, open `calibration_config.py` and update:
 4. **Enter final robot X/Y coordinates when prompted**
 
 - **📄 output**:
-    work_offset.txt
-    final_calibration_data.txt
+    work_offset.txt, final_calibration_data.txt

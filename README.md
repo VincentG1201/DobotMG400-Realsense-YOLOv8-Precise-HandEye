@@ -138,7 +138,7 @@ Before running any scripts, open `calibration_config.py` and update:
     ```
 
 - **📄 output**:
-    -homographt_matrix.txt
+    homographt_matrix.txt
 ---
 
 ## 3️⃣ Stage 2: Calibration Refinement
@@ -152,30 +152,33 @@ Before running any scripts, open `calibration_config.py` and update:
 
 3. **Run the script**
 
-#### 📄 output
-mm_per_pixel.txt
+- **📄 output**:
+    mm_per_pixel.txt
 #### 🔁 Re-run if camera height or lens changes.
 
 
 ### Step 2 — Center Camera on Object
-1. Place one object in the workspace
-2. Uncomment:
+1. **Place one object in the workspace**
+2. **Uncomment:**
     ```python
     step_2_center_camera_on_object()
     ```
-3. Run the script and follow the prompt
-#### output
-camera_centered_pose.txt
+3. **Run the script and follow the prompt**
+
+- **📄 output**:
+    camera_centered_pose.txt
 
 
 ### Step 3 — Compute Gripper Offset (Manual)
-1. Uncomment:
+1. **Uncomment:**
     ```python   
     step_3_get_manual_work_offset()
     ```
-2. Run the script
-3. Manually jog the robot until the gripper is centered on the object
-4. Enter final robot X/Y coordinates when prompted
-#### output
-work_offset.txt
-final_calibration_data.txt
+2. **Run the script**
+
+3. **Manually jog the robot until the gripper is centered on the object**
+4. **Enter final robot X/Y coordinates when prompted**
+
+- **📄 output**:
+    work_offset.txt
+    final_calibration_data.txt

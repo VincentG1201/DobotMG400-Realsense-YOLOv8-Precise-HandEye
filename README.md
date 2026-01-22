@@ -98,18 +98,6 @@ Before running any scripts, open `calibration_config.py` and update:
 
 ---
 
-### 2️⃣ Stage 1 — Homography Calibration (Pixel → Robot)
-
-**Goal:** Capture chessboard pixel locations and record corresponding robot coordinates to create a transformation matrix.
-
-1. **Capture Chessboard Pixel Points** Place the chessboard flat on the working surface and run `calibration_stage_1_homography.py`. Uncomment `step_1_detect_corners()` and press **s** when the chessboard is successfully detected in the frame.
-
-2. **Update Robot Coordinate Data (Manual)** Manually jog the robot so the gripper aligns perfectly with each chessboard corner. Record the **(X, Y)** coordinates and update the `robot_poses_mm` list inside the `step_2_get_robot_poses()` function.
-
-3. **Compute Homography Matrix** Comment out the detection step and run:
-   ```python
-   robot_poses = step_2_get_robot_poses()
-   step_3_calculate_homography(robot_poses)
 
 ## 2️⃣ Stage 1 — Homography Calibration (Pixel → Robot)
 
@@ -158,9 +146,9 @@ homographt_matrix.txt
     step_1_calculate_avg_mm_per_pixel()
     ```
 3. Run the script
-output
+#### output
 mm_per_pixel.txt
-# 🔁 Re-run if camera height or lens changes.
+#### 🔁 Re-run if camera height or lens changes.
 
 
 ### Step 2 — Center Camera on Object
@@ -170,7 +158,7 @@ mm_per_pixel.txt
     step_2_center_camera_on_object()
     ```
 3. Run the script and follow the prompt
-output
+#### output
 camera_centered_pose.txt
 
 
@@ -182,6 +170,6 @@ camera_centered_pose.txt
 2. Run the script
 3. Manually jog the robot until the gripper is centered on the object
 4. Enter final robot X/Y coordinates when prompted
-# output
+#### output
 work_offset.txt
 final_calibration_data.txt

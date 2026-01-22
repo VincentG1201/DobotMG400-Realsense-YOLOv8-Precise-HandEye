@@ -187,3 +187,30 @@ Before running any scripts, open `calibration_config.py` and update:
 
 - **📄 output**:
     work_offset.txt, final_calibration_data.txt
+
+---
+
+### ✅ Final Output
+**The final calibration file contains:**
+* **Scale Data:** mm-per-pixel (X) and mm-per-pixel (Y).
+* **Offset Data:** Camera-to-gripper X and Y offsets.
+
+**With this data, the robot can reliably:**
+<small>Detect an object → Convert pixels to robot coordinates → Compensate scale → Apply gripper offset → Move accurately to target.</small>
+
+---
+
+### 🌟 Key Features
+* **Modular Design:** Two-stage calibration for higher reliability.
+* **Hybrid Logic:** Combines classical CV (Homography) with Deep Learning (YOLOv8 OBB).
+* **Precision:** Human-in-the-loop refinement specifically for gripper alignment.
+* **Deployment-Oriented:** Designed for practical vision-guided grasping tasks.
+
+---
+
+### 📌 Notes
+> ⚠️ **Mounting:** Calibration assumes the camera remains in a fixed position relative to the base throughout both stages.
+> 
+> 📏 **Planes:** For best results, the chessboard and target objects should lie on the same physical working plane (Z-height).
+
+---

@@ -111,7 +111,7 @@ Before running any scripts, open `calibration_config.py` and update:
    ```python
    step_1_detect_corners()
    ```
-Press s when the chessboard is detected.
+**Press s when the chessboard is detected.**
 
 
 ### Step 2 — Update Robot Coordinate Data (Manual)
@@ -130,23 +130,28 @@ Press s when the chessboard is detected.
 
 ### Step 3 — Compute Homography Matrix
 1. **Comment out step_1_detect_corners()**
+
 2. **Run:**
     ```python
     robot_poses = step_2_get_robot_poses()
     step_3_calculate_homography(robot_poses)
     ```
-### output
+
+## 📄 output
 #### homographt_matrix.txt
 
 ## 3️⃣ Stage 2: Calibration Refinement
 ### Step 1 — Estimate mm-per-Pixel
-1. Place multiple detectable objects in the workspace
-2. In calibration_stage_2_refinement.py, uncomment:
+1. **Place multiple detectable objects in the workspace**
+
+2. **In calibration_stage_2_refinement.py, uncomment:**
     ```python
     step_1_calculate_avg_mm_per_pixel()
     ```
-3. Run the script
-#### output
+
+3. **Run the script**
+
+#### 📄 output
 mm_per_pixel.txt
 #### 🔁 Re-run if camera height or lens changes.
 
